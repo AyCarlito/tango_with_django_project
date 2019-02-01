@@ -1,6 +1,6 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>About</title>
@@ -8,6 +8,7 @@
 
 <body>
     <p>{{ message }}</p>
+    <img src='{% static "images/rango.jpg" %}' alt="Picture of Rango" />
     <img src="{{ MEDIA_URL }}cat.jpg" />
 </body>
 

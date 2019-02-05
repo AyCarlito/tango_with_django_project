@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About</title>
-</head>
+{% extends 'rango/base.html' %}
+{% load staticfiles }
 
-<body>
+{% block title_block %}About{% endblock %}
+
+{% block body_block %}
     <p>{{ message }}</p>
     <img src="/static/images/rango.jpg" alt="Picture of Rango" />
     <img src="{{ MEDIA_URL }}cat.jpg" />
-</body>
+{% endblock %}
 
-</html>
